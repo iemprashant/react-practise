@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ValidationComponent from './ValidationComponent';
 import CharComponent from './CharComponent';
-
+import classes from './App.module.css';
 class App extends Component {
   state={
     userInput: ''
@@ -34,7 +34,7 @@ class App extends Component {
           <li>Render a list of CharComponents where each CharComponent receives a different letter of the entered text (in the initial input field) as a prop.</li>
           <li>When you click a CharComponent, it should be removed from the entered text.</li>
         </ol>
-        <h1>Solution</h1>
+        <h1 className={classes.heading}>Solution</h1>
         <p>Write Your Text here</p>
         <input type="text" 
         onChange={this.inputChangeHandler} 
