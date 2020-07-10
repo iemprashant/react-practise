@@ -14,6 +14,7 @@ const IngredientForm = React.memo(props => {
   return (
     <section className="ingredient-form">
       <Card>
+        <h3> Shopping List </h3>
         <form onSubmit={submitHandler}>
           <div className="form-control">
             <label htmlFor="title">Name</label>
@@ -22,13 +23,13 @@ const IngredientForm = React.memo(props => {
               onChange={event=>setEnteredTitle(event.target.value)}/>
           </div>
           <div className="form-control">
-            <label htmlFor="amount">Amount</label>
+            <label htmlFor="amount">Quantity</label>
             <input type="number" id="amount" 
             value={enteredAmount} 
             onChange={event=>setEnteredAmount(event.target.value)} />
           </div>
           <div className="ingredient-form__actions">
-            <button type="submit">Add Ingredient</button>
+            <button type="submit">Add Item To List</button>
           </div>
         </form>
       </Card>

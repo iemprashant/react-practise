@@ -36,7 +36,7 @@ const Search = React.memo(props => {
     <section className="search">
       <Card>
         <div className="search-input">
-          <label>Filter by Title</label>
+          <label>Filter by Name</label>
           <input
           ref={inputRef}
           type="text" 
